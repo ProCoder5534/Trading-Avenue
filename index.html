@@ -1,9 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trading Avenue Stock Market Institute - Mohali, Punjab</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/png" href="/logo.png">
+    <link rel="apple-touch-icon" href="/logo.png">
+
+    <title>Trading Avenue - Best Stock Market Institute in Mohali & Chandigarh | Stock Market Courses</title>
+    <meta name="description"
+        content="Trading Avenue is Mohali & Chandigarh's top stock market institute offering beginner-friendly and advanced trading courses. Learn technical analysis, intraday trading, swing trading, psychology, and risk management. Join online or offline classes." />
+    <meta name="keywords"
+        content="stock market institute Mohali, stock market classes Chandigarh, trading institute Punjab, technical analysis course Mohali, stock market course, Trading Avenue" />
+
+    <!-- Open Graph (Social Media SEO) -->
+    <meta property="og:title" content="Trading Avenue - Best Stock Market Institute in Mohali & Chandigarh" />
+    <meta property="og:description"
+        content="Learn stock market trading from experts. Offline & online classes. Beginner to advanced trading courses available." />
+    <meta property="og:image" content="/logo.png" />
+    <meta property="og:url" content="https://tradingavenue.in" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Trading Avenue - Stock Market Institute" />
+    <meta name="twitter:description" content="Learn profitable trading from experts in Mohali & Chandigarh." />
+    <meta name="twitter:image" content="/logo.png" />
+
+
+    <link rel="canonical" href="https://tradingavenue.in" />
+
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -18,21 +46,25 @@
     </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
         body {
             font-family: 'Inter', sans-serif;
         }
+
         .gradient-bg {
             background: linear-gradient(135deg, #ff5200 0%, #ff7b3d 100%);
         }
+
         .stock-market-bg {
-            background-image: 
+            background-image:
                 linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-                url('https://t4.ftcdn.net/jpg/02/99/97/81/360_F_299978128_VrSxbrMdiTHh4Zx51SGnpMtI24SZs8MD.jpg');
+                url('/background.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             position: relative;
         }
+
         .stock-market-bg::before {
             content: '';
             position: absolute;
@@ -43,34 +75,43 @@
             background: linear-gradient(135deg, rgba(255, 82, 0, 0.3) 0%, rgba(255, 123, 61, 0.2) 100%);
             pointer-events: none;
         }
-        
+
         /* Navbar scroll behavior */
         .navbar {
             transition: transform 0.3s ease-in-out;
         }
+
         .navbar-hidden {
             transform: translateY(-100%);
         }
     </style>
 </head>
+
 <body class="bg-gray-900">
 
     <!-- Navigation Bar -->
-    <nav class="navbar fixed top-0 left-0 right-0 bg-black shadow-lg z-50">
+    <nav class="navbar fixed top-0 left-0 right-0 backdrop-blur-xl bg-black/60 shadow-lg z-50 border-b border-white/5">
+
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
+
                 <!-- Logo/Brand -->
-                <div class="flex-shrink-0">
-                    <span class="text-white text-xl font-bold">Trading <span class="text-primary">Avenue</span></span>
+                <div class="flex items-center space-x-3 flex-shrink-0">
+                    
+                    <span class="text-white text-xl font-bold">
+                        Trading <span class="text-primary">Avenue</span>
+                    </span>
                 </div>
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="#about" class="text-gray-300 hover:text-primary transition">About Us</a>
                     <a href="#benefits" class="text-gray-300 hover:text-primary transition">Benefits</a>
-                    <a href="https://drive.google.com/file/d/1obGZbsjK58PZiGmouU-jSVW_nvP4gBX2/view" target="_blank" class="text-gray-300 hover:text-primary transition">Course Plan</a>
+                    <a href="https://drive.google.com/file/d/1obGZbsjK58PZiGmouU-jSVW_nvP4gBX2/view" target="_blank"
+                        class="text-gray-300 hover:text-primary transition">Course Plan</a>
                     <a href="#contact" class="text-gray-300 hover:text-primary transition">Contact</a>
-                    <a href="tel:+918847067320" class="bg-primary hover:bg-orange-600 text-white px-5 py-2 rounded-lg font-semibold transition shadow-lg">
+                    <a href="tel:+918847067320"
+                        class="bg-primary hover:bg-orange-600 text-white px-5 py-2 rounded-lg font-semibold transition shadow-lg">
                         📞 Call Us
                     </a>
                 </div>
@@ -78,264 +119,296 @@
                 <!-- Mobile Menu Button -->
                 <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
                     <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                     <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
             </div>
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-black border-t border-gray-800">
+        <div id="mobile-menu"
+            class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out md:hidden bg-black border-t border-gray-800 opacity-0">
+
             <div class="px-4 pt-2 pb-4 space-y-2">
-                <a href="#about" class="block text-gray-300 hover:text-primary hover:bg-gray-900 px-3 py-2 rounded transition">About Us</a>
-                <a href="#benefits" class="block text-gray-300 hover:text-primary hover:bg-gray-900 px-3 py-2 rounded transition">Benefits</a>
-                <a href="https://drive.google.com/file/d/1obGZbsjK58PZiGmouU-jSVW_nvP4gBX2/view" target="_blank" class="block text-gray-300 hover:text-primary hover:bg-gray-900 px-3 py-2 rounded transition">Course Plan</a>
-                <a href="#contact" class="block text-gray-300 hover:text-primary hover:bg-gray-900 px-3 py-2 rounded transition">Contact</a>
-                <a href="tel:+918847067320" class="block bg-primary hover:bg-orange-600 text-white px-3 py-2 rounded font-semibold transition text-center">
+                <a href="#about"
+                    class="block text-gray-300 hover:text-primary hover:bg-gray-900 px-3 py-2 rounded transition">About
+                    Us</a>
+                <a href="#benefits"
+                    class="block text-gray-300 hover:text-primary hover:bg-gray-900 px-3 py-2 rounded transition">Benefits</a>
+                <a href="https://drive.google.com/file/d/1obGZbsjK58PZiGmouU-jSVW_nvP4gBX2/view" target="_blank"
+                    class="block text-gray-300 hover:text-primary hover:bg-gray-900 px-3 py-2 rounded transition">Course
+                    Plan</a>
+                <a href="#contact"
+                    class="block text-gray-300 hover:text-primary hover:bg-gray-900 px-3 py-2 rounded transition">Contact</a>
+                <a href="tel:+918847067320"
+                    class="block bg-primary hover:bg-orange-600 text-white px-3 py-2 rounded font-semibold transition text-center">
                     📞 Call Us
                 </a>
             </div>
         </div>
     </nav>
 
+
     <!-- Add padding to body to account for fixed navbar -->
     <div class="pt-16">
 
-    <!-- Floating Call Button -->
-    <a href="tel:+918847067320" class="fixed bottom-8 right-8 z-50 bg-primary hover:bg-orange-600 text-white rounded-full p-4 shadow-2xl transform transition hover:scale-110 flex items-center gap-2 group">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-        </svg>
-        <span class="hidden group-hover:inline-block font-semibold">Call Now</span>
-    </a>
+        <!-- Floating Call Button -->
+        <a href="tel:+918847067320"
+            class="fixed bottom-8 right-8 z-50 bg-primary hover:bg-orange-600 text-white rounded-full p-4 shadow-2xl transform transition hover:scale-110 flex items-center gap-2 group">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            <span class="hidden group-hover:inline-block font-semibold">Call Now</span>
+        </a>
 
 
-    <!-- Hero Section -->
-    <section class="stock-market-bg text-white py-20 px-4">
-        <div class="max-w-6xl mx-auto text-center relative z-10">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                Learn To Become a Profitable Trader With <br/>
-                <span class="text-yellow-300">Trading Avenue</span> Stock Market Institute
-            </h1>
-            <p class="text-xl md:text-2xl mb-8 text-gray-100">
-                From Beginner to Pro: Learn Everything You Need to Know About the Stock Market
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a href="tel:+918847067320" class="bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-orange-600 transition shadow-lg">
-                    📞 Call Now: +91 88470 67320
-                </a>
-                <a href="#contact" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-gray-900 transition">
-                    Get Started Today
-                </a>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- About Section -->
-    <section class="py-16 px-4 bg-gray-800" id="about">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-8 text-white">
-                About <span class="text-primary">Trading Avenue</span> Stock Market Institute
-            </h2>
-            <div class="text-lg text-gray-300 leading-relaxed max-w-4xl mx-auto text-center">
-                <p class="mb-6">
-                    Want to make money in the stock market but don't know where to start? Trading Avenue Stock Market Institute is the perfect spot for you! We offer easy courses made just for you—teaching everything from simple basics to smart trading tricks.
+        <!-- Hero Section -->
+        <section class="stock-market-bg text-white py-20 px-4">
+            <div class="max-w-6xl mx-auto text-center relative z-10">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Learn To Become a Profitable Trader With <br />
+                    <span class="text-yellow-300">Trading Avenue</span> Stock Market Institute
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-gray-100">
+                    From Beginner to Pro: Learn Everything You Need to Know About the Stock Market
                 </p>
-                <p>
-                    Our expert teachers make it fun and clear all your doubts right away. You can join us in Mohali, Punjab for classes in person, or learn online from anywhere. Start your trading journey now!
-                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="tel:+918847067320"
+                        class="bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-orange-600 transition shadow-lg">
+                        📞 Call Now: +91 88470 67320
+                    </a>
+                    <a href="#contact"
+                        class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-gray-900 transition">
+                        Get Started Today
+                    </a>
+                </div>
             </div>
-        </div>
-    </section>
-
-<!-- Benefits Section -->
-<section class="py-16 px-4 bg-gray-900" id="benefits">
-  <div class="max-w-6xl mx-auto">
-    <div class="text-center mb-12">
-      <h2 class="text-4xl font-bold text-white mb-4">
-        Unlock the Secrets of <span class="text-primary">Stock Market Success</span>
-      </h2>
-      <p class="text-xl text-gray-400">
-        Embark on a journey to master the art of stock market trading and unlock the potential for financial growth.
-      </p>
-    </div>
-
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Benefit Card 1 -->
-      <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-primary/20 transition border-t-4 border-primary">
-        <div class="text-primary text-4xl mb-4">📚</div>
-        <h3 class="text-xl font-bold mb-3 text-white">Unveil the Fundamentals of Trading</h3>
-        <p class="text-gray-400">
-          Grasp the core concepts of stock markets, from understanding financial statements to interpreting market trends.
-        </p>
-      </div>
-
-      <!-- Benefit Card 2 -->
-      <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-primary/20 transition border-t-4 border-primary">
-        <div class="text-primary text-4xl mb-4">📊</div>
-        <h3 class="text-xl font-bold mb-3 text-white">Master Technical Analysis</h3>
-        <p class="text-gray-400">
-          Delve into the intricacies of technical analysis, empowering you to identify patterns and make informed trading decisions.
-        </p>
-      </div>
-
-      <!-- Benefit Card 3 -->
-      <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-primary/20 transition border-t-4 border-primary">
-        <div class="text-primary text-4xl mb-4">🛡️</div>
-        <h3 class="text-xl font-bold mb-3 text-white">Develop Risk Management Strategies</h3>
-        <p class="text-gray-400">
-          Safeguard your investments by implementing effective risk management techniques.
-        </p>
-      </div>
-
-      <!-- Benefit Card 4 -->
-      <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-primary/20 transition border-t-4 border-primary">
-        <div class="text-primary text-4xl mb-4">📈</div>
-        <h3 class="text-xl font-bold mb-3 text-white">Harness the Power of Charting</h3>
-        <p class="text-gray-400">
-          Learn to interpret charts like a seasoned trader, recognizing patterns and predicting market movements.
-        </p>
-      </div>
-
-      <!-- Benefit Card 5 -->
-      <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-primary/20 transition border-t-4 border-primary">
-        <div class="text-primary text-4xl mb-4">💻</div>
-        <h3 class="text-xl font-bold mb-3 text-white">Embrace Practical Application</h3>
-        <p class="text-gray-400">
-          Hone your trading skills through hands-on practice with a simulated trading platform.
-        </p>
-      </div>
-
-      <!-- Benefit Card 6 -->
-      <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-primary/20 transition border-t-4 border-primary">
-        <div class="text-primary text-4xl mb-4">🎯</div>
-        <h3 class="text-xl font-bold mb-3 text-white">Expert Guidance</h3>
-        <p class="text-gray-400">
-          Learn from experienced traders who make it fun and clear all your doubts right away.
-        </p>
-      </div>
-    </div>
-
-    <!-- Reviews Block -->
-    <div class="mt-16 bg-gray-800 border border-gray-700 rounded-2xl shadow-lg shadow-primary/10 p-6 md:p-8">
-      <div class="text-center mb-6">
-        <h3 class="text-3xl font-bold text-white mb-2">What Our Students Say</h3>
-        <p class="text-gray-400 text-lg">
-          Real feedback from learners who trusted <span class="text-primary font-semibold">Trading Avenue</span>.
-        </p>
-      </div>
-
-      <div class="rounded-xl overflow-hidden bg-black/40">
-        <iframe 
-          src="https://widgets.sociablekit.com/google-reviews/iframe/25627235" 
-          frameborder="0" 
-          width="100%" 
-          height="600"
-          loading="lazy">
-        </iframe>
-      </div>
-    </div>
-  </div>
-</section>
+        </section>
 
 
-    <!-- Contact Section -->
-    <section class="py-16 px-4 bg-gray-800" id="contact">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-12 text-white">
-                Contact <span class="text-primary">Us</span>
-            </h2>
-            <p class="text-center text-xl text-gray-400 mb-12">There are many ways to contact us.</p>
+        <!-- About Section -->
+        <section class="py-16 px-4 bg-gray-800" id="about">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-8 text-white">
+                    About <span class="text-primary">Trading Avenue</span> Stock Market Institute
+                </h2>
+                <div class="text-lg text-gray-300 leading-relaxed max-w-4xl mx-auto text-center">
+                    <p class="mb-6">
+                        Want to make money in the stock market but don't know where to start? Trading Avenue Stock
+                        Market Institute is the perfect spot for you! We offer easy courses made just for you—teaching
+                        everything from simple basics to smart trading tricks.
+                    </p>
+                    <p>
+                        Our expert teachers make it fun and clear all your doubts right away. You can join us in Mohali,
+                        Punjab for classes in person, or learn online from anywhere. Start your trading journey now!
+                    </p>
+                </div>
+            </div>
+        </section>
 
+        <!-- Benefits Section -->
+        <section class="py-16 px-4 bg-gray-900" id="benefits">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-white mb-4">
+                        Unlock the Secrets of <span class="text-primary">Stock Market Success</span>
+                    </h2>
+                    <p class="text-xl text-gray-400">
+                        Embark on a journey to master the art of stock market trading and unlock the potential for
+                        financial growth.
+                    </p>
+                </div>
 
-            <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <!-- Contact Info -->
-                <div class="space-y-8">
-                    <!-- Phone -->
-                    <div class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg hover:shadow-primary/20 transition border border-gray-700">
-                        <div class="flex items-center gap-4">
-                            <div class="bg-primary text-white p-4 rounded-full">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-lg text-white">Give us a call</h3>
-                                <a href="tel:+918847067320" class="text-primary text-xl font-semibold hover:underline">
-                                    +91 88470 67320
-                                </a>
-                            </div>
-                        </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Benefit Card 1 -->
+                    <div
+                        class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-primary/20 transition border-t-4 border-primary">
+                        <div class="text-primary text-4xl mb-4">📚</div>
+                        <h3 class="text-xl font-bold mb-3 text-white">Unveil the Fundamentals of Trading</h3>
+                        <p class="text-gray-400">
+                            Grasp the core concepts of stock markets, from understanding financial statements to
+                            interpreting market trends.
+                        </p>
                     </div>
 
-
-                    <!-- Email -->
-                    <div class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg hover:shadow-primary/20 transition border border-gray-700">
-                        <div class="flex items-center gap-4">
-                            <div class="bg-primary text-white p-4 rounded-full">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-lg text-white">Email us</h3>
-                                <a href="mailto:tradingavenueinstitute@gmail.com" class="text-primary font-semibold hover:underline break-all">
-                                    tradingavenueinstitute@gmail.com
-                                </a>
-                            </div>
-                        </div>
+                    <!-- Benefit Card 2 -->
+                    <div
+                        class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-primary/20 transition border-t-4 border-primary">
+                        <div class="text-primary text-4xl mb-4">📊</div>
+                        <h3 class="text-xl font-bold mb-3 text-white">Master Technical Analysis</h3>
+                        <p class="text-gray-400">
+                            Delve into the intricacies of technical analysis, empowering you to identify patterns and
+                            make informed trading decisions.
+                        </p>
                     </div>
 
+                    <!-- Benefit Card 3 -->
+                    <div
+                        class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-primary/20 transition border-t-4 border-primary">
+                        <div class="text-primary text-4xl mb-4">🛡️</div>
+                        <h3 class="text-xl font-bold mb-3 text-white">Develop Risk Management Strategies</h3>
+                        <p class="text-gray-400">
+                            Safeguard your investments by implementing effective risk management techniques.
+                        </p>
+                    </div>
 
-                    <!-- Location -->
-                    <div class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg hover:shadow-primary/20 transition border border-gray-700">
-                        <div class="flex items-center gap-4">
-                            <div class="bg-primary text-white p-4 rounded-full">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-lg text-white">Our Location</h3>
-                                <p class="text-gray-400">
-                                    #212 Sunny Business Centre, Sector 125, Mohali, Punjab
-                                </p>
-                            </div>
-                        </div>
+                    <!-- Benefit Card 4 -->
+                    <div
+                        class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-primary/20 transition border-t-4 border-primary">
+                        <div class="text-primary text-4xl mb-4">📈</div>
+                        <h3 class="text-xl font-bold mb-3 text-white">Harness the Power of Charting</h3>
+                        <p class="text-gray-400">
+                            Learn to interpret charts like a seasoned trader, recognizing patterns and predicting market
+                            movements.
+                        </p>
+                    </div>
+
+                    <!-- Benefit Card 5 -->
+                    <div
+                        class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-primary/20 transition border-t-4 border-primary">
+                        <div class="text-primary text-4xl mb-4">💻</div>
+                        <h3 class="text-xl font-bold mb-3 text-white">Embrace Practical Application</h3>
+                        <p class="text-gray-400">
+                            Hone your trading skills through hands-on practice with a simulated trading platform.
+                        </p>
+                    </div>
+
+                    <!-- Benefit Card 6 -->
+                    <div
+                        class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-primary/20 transition border-t-4 border-primary">
+                        <div class="text-primary text-4xl mb-4">🎯</div>
+                        <h3 class="text-xl font-bold mb-3 text-white">Expert Guidance</h3>
+                        <p class="text-gray-400">
+                            Learn from experienced traders who make it fun and clear all your doubts right away.
+                        </p>
                     </div>
                 </div>
 
+                <!-- Reviews Block -->
+                <div
+                    class="mt-16 bg-gray-800 border border-gray-700 rounded-2xl shadow-lg shadow-primary/10 p-6 md:p-8">
+                    <div class="text-center mb-6">
+                        <h3 class="text-3xl font-bold text-white mb-2">What Our Students Say</h3>
+                        <p class="text-gray-400 text-lg">
+                            Real feedback from learners who trusted <span class="text-primary font-semibold">Trading
+                                Avenue</span>.
+                        </p>
+                    </div>
 
-                <!-- Google Map -->
-                <div class="rounded-xl overflow-hidden shadow-lg border border-gray-700">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3429.2106830296552!2d76.6747331!3d30.740583!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fef25a6b9a51b%3A0xe3a09d6461b98bf4!2sTrading%20Avenue%20Stock%20Market%20Institute!5e0!3m2!1sen!2sin!4v1764252924757!5m2!1sen!2sin"
-                        width="100%" 
-                        height="400" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade"
-                        class="w-full h-full min-h-[400px] grayscale-[30%]">
-                    </iframe>
+                    <div class="rounded-xl overflow-hidden bg-black/40">
+                        <iframe src="https://widgets.sociablekit.com/google-reviews/iframe/25627235" frameborder="0"
+                            width="100%" height="600" loading="lazy">
+                        </iframe>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="gradient-bg text-white py-8 px-4">
-        <div class="max-w-6xl mx-auto text-center">
-            <h3 class="text-2xl font-bold mb-2">Trading Avenue Stock Market Institute</h3>
-            <p class="text-gray-100 mb-4">Mohali, Punjab | Online & Offline Classes Available</p>
-            <p class="text-sm text-gray-200">© 2025 Trading Avenue. All rights reserved.</p>
-        </div>
-    </footer>
+
+        <!-- Contact Section -->
+        <section class="py-16 px-4 bg-gray-800" id="contact">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-white">
+                    Contact <span class="text-primary">Us</span>
+                </h2>
+                <p class="text-center text-xl text-gray-400 mb-12">There are many ways to contact us.</p>
+
+
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <!-- Contact Info -->
+                    <div class="space-y-8">
+                        <!-- Phone -->
+                        <div
+                            class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg hover:shadow-primary/20 transition border border-gray-700">
+                            <div class="flex items-center gap-4">
+                                <div class="bg-primary text-white p-4 rounded-full">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg text-white">Give us a call</h3>
+                                    <a href="tel:+918847067320"
+                                        class="text-primary text-xl font-semibold hover:underline">
+                                        +91 88470 67320
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Email -->
+                        <div
+                            class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg hover:shadow-primary/20 transition border border-gray-700">
+                            <div class="flex items-center gap-4">
+                                <div class="bg-primary text-white p-4 rounded-full">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg text-white">Email us</h3>
+                                    <a href="mailto:tradingavenueinstitute@gmail.com"
+                                        class="text-primary font-semibold hover:underline break-all">
+                                        tradingavenueinstitute@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Location -->
+                        <div
+                            class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg hover:shadow-primary/20 transition border border-gray-700">
+                            <div class="flex items-center gap-4">
+                                <div class="bg-primary text-white p-4 rounded-full">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg text-white">Our Location</h3>
+                                    <p class="text-gray-400">
+                                        #212 Sunny Business Centre, Sector 125, Mohali, Punjab
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Google Map -->
+                    <div class="rounded-xl overflow-hidden shadow-lg border border-gray-700">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3429.2106830296552!2d76.6747331!3d30.740583!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fef25a6b9a51b%3A0xe3a09d6461b98bf4!2sTrading%20Avenue%20Stock%20Market%20Institute!5e0!3m2!1sen!2sin!4v1764252924757!5m2!1sen!2sin"
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="w-full h-full min-h-[400px] grayscale-[30%]">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="gradient-bg text-white py-8 px-4">
+            <div class="max-w-6xl mx-auto text-center">
+                <h3 class="text-2xl font-bold mb-2">Trading Avenue Stock Market Institute</h3>
+                <p class="text-gray-100 mb-4">Mohali, Punjab | Online & Offline Classes Available</p>
+                <p class="text-sm text-gray-200">© 2025 Trading Avenue. All rights reserved.</p>
+            </div>
+        </footer>
 
     </div>
 
@@ -351,13 +424,13 @@
                     const mobileMenu = document.getElementById('mobile-menu');
                     const hamburgerIcon = document.getElementById('hamburger-icon');
                     const closeIcon = document.getElementById('close-icon');
-                    
+
                     if (!mobileMenu.classList.contains('hidden')) {
                         mobileMenu.classList.add('hidden');
                         hamburgerIcon.classList.remove('hidden');
                         closeIcon.classList.add('hidden');
                     }
-                    
+
                     // Scroll with offset for fixed navbar
                     const navbarHeight = document.querySelector('.navbar').offsetHeight;
                     const targetPosition = target.offsetTop - navbarHeight;
@@ -369,16 +442,30 @@
             });
         });
 
-        // Mobile Menu Toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const hamburgerIcon = document.getElementById('hamburger-icon');
-        const closeIcon = document.getElementById('close-icon');
+        //mobile menu
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const hamburgerIcon = document.getElementById("hamburger-icon");
+        const closeIcon = document.getElementById("close-icon");
 
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            hamburgerIcon.classList.toggle('hidden');
-            closeIcon.classList.toggle('hidden');
+        let isOpen = false;
+
+        mobileMenuButton.addEventListener("click", () => {
+            isOpen = !isOpen;
+
+            if (isOpen) {
+                mobileMenu.classList.remove("max-h-0", "opacity-0");
+                mobileMenu.classList.add("max-h-[500px]", "opacity-100");
+
+                hamburgerIcon.classList.add("hidden");
+                closeIcon.classList.remove("hidden");
+            } else {
+                mobileMenu.classList.add("max-h-0", "opacity-0");
+                mobileMenu.classList.remove("max-h-[500px]", "opacity-100");
+
+                hamburgerIcon.classList.remove("hidden");
+                closeIcon.classList.add("hidden");
+            }
         });
 
         // Navbar Hide on Scroll Down, Show on Scroll Up
@@ -399,7 +486,7 @@
             // Scrolling down
             if (currentScroll > lastScrollTop && currentScroll > scrollThreshold) {
                 navbar.classList.add('navbar-hidden');
-            } 
+            }
             // Scrolling up
             else if (currentScroll < lastScrollTop) {
                 navbar.classList.remove('navbar-hidden');
@@ -409,4 +496,5 @@
         }, false);
     </script>
 </body>
+
 </html>
