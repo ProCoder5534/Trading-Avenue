@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- FAVICONS & MANIFEST -->
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" type="image/png" href="/logo.png">
+<link rel="apple-touch-icon" href="/logo.png">
+
+<title>Terms and Conditions | Trading Avenue Stock Market Institute</title>
+<meta name="description" content="Terms and conditions for Trading Avenue Stock Market Institute.">
+
+<!-- STYLES & FONTS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:#0A1128;
+    --panel:#0F1C3F;
+    --panel-light:#152553;
+    --orange:#FF5A1F;
+    --green:#16A34A;
+    --red:#DC2626;
+    --paper:#F5F7FA;
+    --slate:#8B95AA;
+    --line:rgba(245,247,250,0.10);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--ink);
+    color:var(--paper);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .font-display{font-family:'Space Grotesk',sans-serif;}
+  .font-mono{font-family:'JetBrains Mono',monospace;}
+  .text-orange{color:var(--orange);}
+  .text-green{color:var(--green);}
+  .text-red{color:var(--red);}
+  .text-slate{color:var(--slate);}
+  .bg-panel{background:var(--panel);}
+  .bg-panel-light{background:var(--panel-light);}
+  .border-line{border-color:var(--line);}
+  .grad-orange{background:linear-gradient(135deg,#FF5A1F,#FF8A50);}
+
+  .fade-up{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
+  .fade-up.in{opacity:1;transform:translateY(0);}
+
+  ::selection{background:var(--orange);color:#fff;}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
+
+  .grid-overlay{
+    background-image: linear-gradient(rgba(245,247,250,0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(245,247,250,0.045) 1px, transparent 1px);
+    background-size: 42px 42px;
+  }
+
+  a:focus-visible, button:focus-visible{outline:2px solid var(--orange); outline-offset:3px;}
+
+  /* Terms and Conditions Specific Styles */
+  .tc-content p { margin-bottom: 1.25rem; color: var(--slate); line-height: 1.75; }
+  .tc-content strong { color: var(--paper); font-weight: 600; }
+  .tc-content h3 { 
+    font-family: 'Space Grotesk', sans-serif; 
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    color: var(--paper); 
+    margin-top: 2.5rem; 
+    margin-bottom: 1rem; 
+    border-bottom: 1px solid var(--line); 
+    padding-bottom: 0.75rem; 
+  }
+  .tc-content ul, .tc-content ol { margin-bottom: 1.5rem; padding-left: 1.5rem; color: var(--slate); }
+  .tc-content li { margin-bottom: 0.75rem; line-height: 1.75; }
+  .tc-content ul { list-style-type: disc; }
+  .tc-content ol { list-style-type: decimal; }
+  .tc-content ul li::marker { color: var(--orange); }
+  .tc-content ol li::marker { color: var(--paper); font-weight: 600; font-family: 'JetBrains Mono', monospace; font-size: 0.9em; }
+  .tc-content ol ol { list-style-type: lower-alpha; margin-top: 0.5rem; }
+  .tc-content ol ol li::marker { color: var(--slate); font-weight: 400; }
+</style>
+</head>
+<body class="overflow-x-hidden">
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 bg-ink/85 backdrop-blur border-b border-line" style="background:rgba(10,17,40,0.85);">
+  <nav class="max-w-7xl mx-auto flex items-center justify-between px-5 sm:px-8 py-4">
+    <a href="/" class="flex items-center gap-2.5">
+      <img src="/logo2.png" alt="Trading Avenue logo" class="w-9 h-9 sm:w-10 sm:h-10 rounded-md object-cover">
+      <span class="font-display font-bold text-lg sm:text-xl tracking-tight text-white">TRADING AVENUE</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate">
+      <a href="/#about" class="hover:text-white transition-colors">About Us</a>
+      <a href="/#benefits" class="hover:text-white transition-colors">Benefits</a>
+      <a href="/#courses" class="hover:text-white transition-colors">Courses</a>
+      <a href="https://drive.google.com/file/d/12r6NIRYHq8hB6APkH4jZ7oXQFiCrWMS6/view?usp=sharing" target="_blank" rel="noopener" class="hover:text-white transition-colors">Course Plan</a>
+      <a href="/#contact" class="hover:text-white transition-colors">Contact</a>
+    </div>
+    <a href="tel:+918847067320" class="hidden sm:inline-flex items-center gap-2 grad-orange text-white text-sm font-semibold px-4 py-2.5 rounded-md hover:brightness-110 transition">
+      📞 +91 88470 67320
+    </a>
+    <button id="menuBtn" class="md:hidden text-white" aria-label="Open menu" aria-expanded="false">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </nav>
+  <div id="mobileMenu" class="md:hidden bg-panel border-t border-line overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0" style="border-top-width:0;">
+    <div class="px-5 py-4 flex flex-col gap-4 text-sm">
+      <a href="/#about" class="text-slate hover:text-white">About Us</a>
+      <a href="/#benefits" class="text-slate hover:text-white">Benefits</a>
+      <a href="/#courses" class="text-slate hover:text-white">Courses</a>
+      <a href="https://drive.google.com/file/d/12r6NIRYHq8hB6APkH4jZ7oXQFiCrWMS6/view?usp=sharing" target="_blank" rel="noopener" class="text-slate hover:text-white">Course Plan</a>
+      <a href="/#contact" class="text-slate hover:text-white">Contact</a>
+      <a href="tel:+918847067320" class="grad-orange text-white text-center font-semibold px-4 py-2.5 rounded-md">📞 Call Now</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO / PAGE HEADER -->
+<section class="relative grid-overlay border-b border-line">
+  <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(ellipse at 50% 0%, rgba(255,90,31,0.1), transparent 70%);"></div>
+  <div class="relative max-w-4xl mx-auto px-5 sm:px-8 py-16 sm:py-20 text-center">
+    <p class="font-mono text-xs sm:text-sm text-orange tracking-widest uppercase mb-4">Legal Information</p>
+    <h1 class="font-display font-bold text-white text-3xl sm:text-4xl lg:text-5xl">Terms and Conditions</h1>
+    <p class="font-mono text-xs text-slate mt-6">Last Updated: <span class="text-white">28-07-2024</span></p>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="max-w-4xl mx-auto px-5 sm:px-8 py-12 sm:py-16 tc-content fade-up">
+  
+  <!-- IMPORTANT NOTE BANNER -->
+  <div class="bg-panel/60 border border-orange/40 rounded-xl p-6 sm:p-8 mb-10 relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-1 h-full grad-orange"></div>
+    <div class="flex items-start gap-4">
+      <div class="text-orange text-2xl shrink-0 mt-1">⚠️</div>
+      <div>
+        <strong class="text-orange font-display text-lg block mb-2">Important Note</strong>
+        <p class="text-white/90 text-sm sm:text-base !mb-0 !leading-relaxed">
+          Trading Avenue Stock Market Institute, Mohali is an educational institute and is focused on providing high quality stock market knowledge. We, That is Trading Avenue Stock Market Institute, is not a financial advisor and does not provide any tips or advice. Though we are focused on providing stock market knowledge, we are not responsible for any financial gains or losses made by our students.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p>Welcome to <strong>Trading Avenue Stock Market Institute</strong> (“we”, “us”, “our”). By accessing our Services, Courses and Website, you comply with these terms. If you do not agree with these Terms, please do not use our Services.</p>
+
+  <p><strong>Changes to terms:</strong> We reserve the right to modify these Terms at any time. We will notify you of any significant changes in our Terms and Conditions. Your continued use of our Services after any changes constitutes your acceptance of the new Terms.</p>
+
+  <p><strong>Services Offered:</strong> Trading Avenue Stock Market Institute provides Educational Services, Stock Market Education, Stock Market Courses, Webinars and Online Workshops.</p>
+
+  <h3>User Responsibilities</h3>
+  <ol>
+    <li><strong>Compliance with Laws:</strong> You agree to use our Services in compliance with all applicable laws and regulations.</li>
+    <li><strong>Prohibited Conduct:</strong> You agree not to engage in any activity that is fraudulent, abusive, harmful, or otherwise in violation of these Terms, including but not limited to:
+      <ol>
+        <li>Misusing our Services</li>
+        <li>Engaging in any form of market manipulation</li>
+      </ol>
+    </li>
+    <li><strong>Accurate Information:</strong> Users must provide accurate, current, and complete information during registration.</li>
+    <li><strong>Respect for Others:</strong> Users must treat other members and instructors with respect and refrain from any form of harassment, abuse, or discrimination.</li>
+    <li><strong>Confidentiality:</strong> Users must maintain the confidentiality of any proprietary information or course materials provided by the institute and not share them with unauthorized parties.</li>
+    <li><strong>Attendance and Participation:</strong> Users are expected to actively participate in courses, complete assignments on time, and adhere to any attendance policies.</li>
+    <li><strong>No Financial Advice:</strong> Users must understand that the content provided is for educational purposes only and does not constitute financial advice. Users are responsible for their own investment decisions.</li>
+    <li><strong>Respect Intellectual Property:</strong> Users must respect the intellectual property rights of the institute and other third parties, not infringing upon copyrights, trademarks, or other proprietary rights.</li>
+    <li><strong>Responsibility for Equipment:</strong> Users are responsible for ensuring they have the necessary equipment and internet connection to access and use the Services.</li>
+    <li><strong>Feedback and Suggestions:</strong> Users may provide feedback and suggestions to improve the Services, but acknowledge that the institute may use this feedback without any obligation to compensate the user.</li>
+  </ol>
+
+  <h3>Ownership of Course Content</h3>
+  <p>All content, materials, and resources provided through our courses, including but not limited to text, graphics, logos, images, audio clips, video clips, digital downloads, and software, are the intellectual property of Trading Avenue Stock Market Institute or our licensors and are protected by copyright, trademark, and other applicable intellectual property laws.</p>
+  <ul>
+    <li><strong>Usage Rights:</strong> Users are granted a limited, non-exclusive, non-transferable license to access and use the course content for personal, non-commercial educational purposes only. This license does not allow users to:
+      <ol>
+        <li>Copy, reproduce, modify, distribute, or create derivative works of the course content without express written permission from Trading Avenue.</li>
+        <li>Use the course content for any commercial purpose or for public display (commercial or non-commercial).</li>
+        <li>Share login credentials or course materials with unauthorized individuals.</li>
+      </ol>
+    </li>
+    <li><strong>Reservation of Rights:</strong> Trading Avenue reserves all rights not expressly granted to users in these terms and conditions. Users acknowledge that the unauthorized use of the course content may violate copyright, trademark, and other applicable laws and could result in legal action.</li>
+  </ul>
+
+  <h3>Fees and Payments</h3>
+  <ul>
+    <li><strong>Pricing:</strong> Our Services are offered for a fee, as detailed during registration and on our website. All prices are subject to change without notice.</li>
+    <li><strong>Payment Terms:</strong> Payment for our Services must be made at the time of purchase. Access to courses will be granted only upon receipt of full payment.</li>
+    <li><strong>Payment Methods:</strong> We accept Cash, Bank Transfer, Checks, UPI Payment, Digital Wallets, Debit or Credit Cards.</li>
+    <li><strong>Installment Plans:</strong> There are some exceptions in some cases which only applies to our 45-Day Beginner to Pro Full Course where the payment can be made in two equal installments each installment made at the end of the week. Before starting the course on an installment plan, a security fee of atleast ₹ 5,000 must be paid which would later be subtracted from the course fee.</li>
+    <li><strong>Failed Payments:</strong> In the event of a failed payment, you will be notified and asked to provide updated payment information. Access to services may be suspended until payment is successfully processed.</li>
+    <li><strong>Refusal to Pay:</strong> If a student fails to pay the agreed course fee after completing more than five lectures, they will be reminded to settle the outstanding amount promptly. Continued non-payment will result in the suspension of access to our services. Persistent refusal to pay may lead to legal action to recover the owed amount.</li>
+  </ul>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-line bg-ink">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 pt-14 pb-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12">
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-2.5 mb-4">
+          <svg width="26" height="26" viewBox="0 0 30 30" fill="none">
+            <path d="M2 22L9 15L14 19L27 4" stroke="#FF5A1F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20 4H27V11" stroke="#FF5A1F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="font-display font-bold text-white">TRADING AVENUE</span>
+        </div>
+        <p class="text-slate text-sm max-w-sm leading-relaxed">Mohali, Punjab · Online &amp; Offline Classes Available. Learn. Trade. Grow.</p>
+      </div>
+      <div>
+        <h4 class="font-display font-semibold text-white text-sm mb-4 tracking-wide">Quick Links</h4>
+        <ul class="space-y-2.5 text-sm text-slate">
+          <li><a href="/#about" class="hover:text-orange transition">About Us</a></li>
+          <li><a href="/#benefits" class="hover:text-orange transition">Benefits</a></li>
+          <li><a href="https://drive.google.com/file/d/12r6NIRYHq8hB6APkH4jZ7oXQFiCrWMS6/view?usp=sharing" target="_blank" rel="noopener" class="hover:text-orange transition">Course Plan</a></li>
+          <li><a href="/#contact" class="hover:text-orange transition">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display font-semibold text-white text-sm mb-4 tracking-wide">Get in Touch</h4>
+        <ul class="space-y-2.5 text-sm text-slate font-mono">
+          <li><a href="tel:+918847067320" class="hover:text-orange transition">+91 88470 67320</a></li>
+          <li><a href="mailto:tradingavenueinstitute@gmail.com" class="hover:text-orange transition break-all">connect@tradingavenue.in</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-line pt-8">
+      <div class="text-slate text-xs leading-relaxed">
+        <h5 class="font-display font-semibold text-white text-sm mb-3">Disclaimer</h5>
+        <p class="max-w-4xl">Trading Avenue is an educational institution dedicated to providing stock market education and training only. We do not provide investment, financial, legal, tax, or portfolio management services. We are not SEBI-registered investment advisers, research analysts, portfolio managers, stock brokers, or financial intermediaries.</p>
+        <p class="mt-3 max-w-4xl">All information, examples, charts, strategies, and course materials are shared solely for educational and informational purposes. Any trading or investment decisions made by students or visitors are entirely at their own discretion and risk.</p>
+        <p class="mt-3 max-w-4xl">Trading Avenue, its instructors, employees, and affiliates shall not be held responsible or liable for any financial gains, losses, damages, or consequences arising from the use of the information provided through our courses, website, or other educational content.</p>
+      </div>
+      <p class="text-slate text-xs mt-8">© 2025 Trading Avenue. All rights reserved. · Investments in securities are subject to market risks.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  function setMobileMenu(open) {
+    if (open) {
+      mobileMenu.style.borderTopWidth = '1px';
+      mobileMenu.classList.remove('max-h-0', 'opacity-0');
+      mobileMenu.classList.add('opacity-100');
+      mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
+    } else {
+      mobileMenu.style.maxHeight = '0px';
+      mobileMenu.classList.remove('opacity-100');
+      mobileMenu.classList.add('opacity-0');
+      mobileMenu.style.borderTopWidth = '0';
+    }
+    menuBtn.setAttribute('aria-expanded', String(open));
+  }
+  let mobileMenuOpen = false;
+  menuBtn.addEventListener('click', () => {
+    mobileMenuOpen = !mobileMenuOpen;
+    setMobileMenu(mobileMenuOpen);
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    mobileMenuOpen = false;
+    setMobileMenu(false);
+  }));
+
+  // Simple scroll reveal for content
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
